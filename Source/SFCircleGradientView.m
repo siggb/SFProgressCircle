@@ -108,6 +108,12 @@
     _gradientLayer.endAngle = endAngle;
 }
 
+- (void)setRoundedCorners:(BOOL)roundedCorners
+{
+    _roundedCorners = roundedCorners;
+    _gradientLayer.roundedCorners = roundedCorners;
+}
+
 - (void)updateLayerData:(CGRect)frame
 {
     int numSegments = 16;
